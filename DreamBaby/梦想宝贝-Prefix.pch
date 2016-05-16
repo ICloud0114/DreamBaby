@@ -1,0 +1,58 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import "UIColor+ColorUtil.h"
+
+#endif
+
+
+
+#define RELEASE_SAFE(_ptr_) [_ptr_ release]; _ptr_ = nil;
+
+
+//define
+#define  ProductionDate @"ProductionDate"           //预产期
+#define  LastMenstruation @"LastMenstruation"
+#define  MenstruationCycle @"MenstruationCycle"
+#define ParentDate @"ParentDate"
+
+
+#define  UserAuthToken   @"UserAuthToken"
+#define  KeepPassword    @"KeepPassword"
+#define  UserInfo        @"UserInfo"
+
+#define Isfertility @"Isfertility"      //是否生育
+
+#define snToken @"snToken"          //推送token
+#define CityArea @"CityArea"
+#define bieMing @"bieMing"          //传给服务器的推送标签
+#define BUNDLE_NAME @"Resource"
+
+#define MomHistory @"MomHistory"
+#define BabyHistory @"BabyHistory"
+//#define BABYAPI @"http://yunqi.es-cloud.net/api/GetFetationInfo.ashx?Method=%@&Params=%@&Sign=%@" //api
+#define IMAGEURL @"http://yunqi.es-cloud.net"
+//#define BABYAPI @"http://192.168.0.152:11315/api/GetFetationInfo.ashx?Method=%@&Params=%@&Sign=%@" //api
+//#define BABYAPI @"http://183.61.84.207:1234/api/GetFetationInfo.ashx?Method=%@&Params=%@&Sign=%@" //api
+
+#define BABYAPI @"http://www.dreambaby.cn:1234/api/GetFetationInfo.ashx?Method=%@&Params=%@&Sign=%@"
+
+#define AREASTRING @"areaString" //区域
+#define ISPUSHSUBVIEW @"pushSubview" //记录是否进入子页
+#define PUSHSTATE @"pushState"  //推送状态
+#define IMG_URL @"img_url" //我的日记imageUrl
+#define LISTARRAY @"listArray"  //streetList
+#define AREAARRAY @"areaArray"  //areaArray
+#define STREETARRAY @"streetArray"  //streetArray
